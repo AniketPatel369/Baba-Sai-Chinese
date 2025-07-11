@@ -13,8 +13,14 @@ export const menuItems: MenuItem[] = [
   { name: "Tomato Soup", prices: [60], category: "Soup" },
 
   // Noodles
+  { name: "Veg. Hongkong Noodles", prices: [100], category: "Noodles" },
   { name: "Veg. Hakka Noodles", prices: [70, 100], category: "Noodles" },
-  { name: "Veg. Schezwan Noodles", prices: [80, 110], category: "Noodles" },
+  { name: "Veg. Noodle Manchurian", prices: [70, 100], category: "Noodles" },
+  { name: "Veg. Schezwan Noodles", prices: [70, 100], category: "Noodles" },
+  { name: "Veg. Singapuri Noodles", prices: [100], category: "Noodles" },
+  { name: "Veg. Paneer Noodles", prices: [150], category: "Noodles" },
+  { name: "Veg. Rice Noodles", prices: [100], category: "Noodles" },
+  { name: "Veg. Gravy Noodles", prices: [100], category: "Noodles" },
   { name: "Singapore Noodles", prices: [90, 120], category: "Noodles" },
   { name: "Chilli Garlic Noodles", prices: [80, 110], category: "Noodles" },
 
@@ -24,7 +30,9 @@ export const menuItems: MenuItem[] = [
   { name: "Gobi Manchurian", prices: [80, 120], category: "Manchurian" },
 
   // Bhel
-  { name: "Chinese Bhel", prices: [60], category: "Bhel" },
+  { name: "Chinese Bhel", prices: [70, 100], category: "Bhel" },
+  { name: "Bombay Bhel", prices: [70, 100], category: "Bhel" },
+  { name: "Gravy Bhel", prices: [100], category: "Bhel" },
   { name: "Dry Bhel", prices: [50], category: "Bhel" },
 
   // Paneer
