@@ -13,7 +13,7 @@ export const menu: Record<string, MenuItem[]> = {
     { name: "Tomato Soup", half: 70, image: "https://images.unsplash.com/photo-1629978444632-9f63ba0eff47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b21hdG8lMjBzb3VwfGVufDB8fHx8MTc1MjIxNjYyMXww&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Paneer Soup", full: 100, image: "https://images.unsplash.com/photo-1721223016672-b42b560b5402?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8bWFuY2h1cmlhbi1zb3VwfGVufDB8fHx8MTc1MjIxODkwN3ww&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Manchurian Soup", half: 70, image: "https://images.unsplash.com/photo-1628585352638-6a371453b344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaHVyaWFuJTIwc291cHxlbnwwfHx8fDE3NTIyMjQwMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Noodle's Soup", half: 70, image: "https://images.unsplash.com/photo-1591814468924-caf88d356239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub29kbGUlMjBzb3VwfGVufDB8fHx8MTc1MjIyNDAwM3ww&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Noodle's Soup", half: 70, image: "https://images.unsplash.com/photo-1600490036275-35f5f1656861?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxub29kbGV8ZW58MHx8fHwxNzUyMjIyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Babycorn Soup", full: 120, image: "https://images.unsplash.com/photo-1628585352638-6a371453b344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5Y29ybiUyMHNvdXB8ZW58MHx8fHwxNzUyMjI0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080" }
   ],
   "NOODLES": [
