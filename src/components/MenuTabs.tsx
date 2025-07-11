@@ -14,13 +14,15 @@ export function MenuTabs() {
   const handleTabChange = (value: string) => {
     // A small delay ensures the element is rendered and measurable before scrolling
     setTimeout(() => {
-      const trigger = tabsListRef.current?.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
-      if (trigger) {
-        trigger.scrollIntoView({
-          behavior: "smooth",
-          block: "nearest",
-          inline: "center",
-        });
+      if (tabsListRef.current) {
+        const trigger = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
+        if (trigger) {
+          trigger.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center",
+          });
+        }
       }
     }, 50);
   };
@@ -29,7 +31,9 @@ export function MenuTabs() {
   useEffect(() => {
     const firstCategory = menuCategories[0];
     if (firstCategory) {
-      handleTabChange(firstCategory);
+      // Delaying the initial scroll slightly can help ensure the layout is stable.
+      const timer = setTimeout(() => handleTabChange(firstCategory), 100);
+      return () => clearTimeout(timer);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
