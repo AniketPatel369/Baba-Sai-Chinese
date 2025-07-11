@@ -8,8 +8,8 @@ export function Header() {
       <Image 
         src="/logo.png"
         alt="Baba Sai Eats Logo"
-        width={150}
-        height={150}
+        width={100}
+        height={100}
         className="mb-4"
         priority
       />
