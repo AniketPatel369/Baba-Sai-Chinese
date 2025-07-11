@@ -46,7 +46,7 @@ export function MenuTabs() {
   return (
     <Tabs defaultValue={menuCategories[0]} className="w-full" onValueChange={handleTabChange}>
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm -mx-4 px-4 py-2 flex justify-center">
-        <ScrollArea ref={scrollAreaRef} className="w-full max-w-max whitespace-nowrap no-scrollbar">
+        <ScrollArea ref={scrollAreaRef} className="w-full max-w-max whitespace-nowrap">
           <TabsList className="inline-flex h-auto p-1 bg-card border border-border/50 rounded-full">
             {menuCategories.map((category) => (
               <TabsTrigger 

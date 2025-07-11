@@ -42,7 +42,7 @@ export const menu: Record<string, MenuItem[]> = {
     { name: "Paneer Chilli Dry", half: 90, full: 140, image: "https://images.unsplash.com/photo-1701579231320-cc2f7acad3cd?auto=format&fit=crop&w=1080&q=80" },
     { name: "Paneer Chilli Gravy", half: 90, full: 140, image: "https://images.unsplash.com/photo-1690401769082-5f475f87fb22?auto=format&fit=crop&w=1080&q=80" },
     { name: "Paneer Chilli 65", full: 140, image: "https://images.unsplash.com/photo-1551881192-002e02ad3d87?auto=format&fit=crop&w=1080&q=80" },
-    { name: "Paneer Manchurian Dry", full: 150, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBtYW5jaHVyaWFuJTIwZHJ5fGVufDB8fHx8MTc1MjIyNDAxNnww&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Paneer Manchurian Dry", full: 150, image: "/food/paneer-manchurian-dry.jpg" },
     { name: "Paneer Manchurian Gravy", full: 150, image: "https://images.unsplash.com/photo-1690403160225-3db8cc8babd5?auto=format&fit=crop&w=1080&q=80" }
   ],
   "RICE": [
@@ -51,10 +51,10 @@ export const menu: Record<string, MenuItem[]> = {
     { name: "Veg. Machurian Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1705174299330-939dd03cc864?auto=format&fit=crop&w=1080&q=80" },
     { name: "Veg. Singapuri Rice", full: 100, image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1080&q=80" },
     { name: "Veg. Paneer Rice", full: 140, image: "https://images.unsplash.com/photo-1751618646882-4221d5e3b1c2?auto=format&fit=crop&w=1080&q=80" },
-    { name: "Veg. Triple Rice", full: 150, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmlwbGUlMjByaWNlfGVufDB8fHx8MTc1MjIyNDA0OXww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Schezwan Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hlemRhbiUyMHJpY2V8ZW58MHx8fHwxNzUyMjI0MDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Combination Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1596560544141-f0239cb93e10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21iaW5hdGlvbiUyMHJpY2V8ZW58MHx8fHwxNzUyMjI0MDUwfDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Babycorn Rice", full: 120, image: "https://images.unsplash.com/photo-1628585352638-6a371453b344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5Y29ybiUyMHJpY2V8ZW58MHx8fHwxNzUyMjI0MDUxfDA&ixlib=rb-4.1.0&q=80&w=1080" }
+    { name: "Veg. Triple Rice", full: 150, image: "/food/veg-triple-rice.jpg" },
+    { name: "Veg. Schezwan Rice", half: 70, full: 100, image: "/food/veg-schezwan-rice.jpg" },
+    { name: "Veg. Combination Rice", half: 70, full: 100, image: "/food/veg-combination-rice.jpg" },
+    { name: "Babycorn Rice", full: 120, image: "/food/babycorn-rice.jpg" }
   ]
 };
     
