@@ -8,7 +8,7 @@ export interface MenuItem {
 
 export const menu: Record<string, MenuItem[]> = {
   "SOUP": [
-    { name: "Manchau Soup", half: 70, image: "https://images.unsplash.com/photo-1547595232-224a2c638368?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaG93JTIwc291cHxlbnwwfHx8fDE3NTIyMjQwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Manchau Soup", half: 70, image: "https://images.unsplash.com/photo-1625535608282-8f181a38f9e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW5jaGF1JTIwc291cCUyMHxlbnwwfHx8fDE3NTIyMTQzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Hot & Sour Soup", half: 70, image: "https://images.unsplash.com/photo-1553522709-a1b8a5355403?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob3QlMjBzb3VyJTIwc291cHxlbnwwfHx8fDE3NTIyMjQwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Tomato Soup", half: 70, image: "https://images.unsplash.com/photo-1561043433-aaf282b535b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b21hdG8lMjBzb3VwfGVufDB8fHx8MTc1MjIyNDAwMXww&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Paneer Soup", full: 100, image: "https://images.unsplash.com/photo-1606491956392-52097a89e9a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBzb3VwfGVufDB8fHx8MTc1MjIyNDAwMnww&ixlib=rb-4.1.0&q=80&w=1080" },
