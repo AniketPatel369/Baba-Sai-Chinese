@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -9,38 +10,49 @@ const menuCategories = Object.keys(menu);
 
 export function MenuTabs() {
   const tabsListRef = useRef<HTMLDivElement>(null);
+  const previousTabIndexRef = useRef<number>(0);
 
-  const scrollCategoryToCenter = (tabElement: HTMLElement, containerElement: HTMLElement) => {
+  const scrollCategoryToCenter = (tabElement: HTMLElement) => {
+    if (!tabsListRef.current) return;
+    const container = tabsListRef.current;
+
     const elementLeft = tabElement.offsetLeft;
     const elementWidth = tabElement.offsetWidth;
-    const containerWidth = containerElement.offsetWidth;
+    const containerWidth = container.offsetWidth;
 
     const scrollTo = elementLeft - (containerWidth / 2) + (elementWidth / 2);
 
-    containerElement.scrollTo({
+    container.scrollTo({
       left: scrollTo,
       behavior: "smooth",
     });
   };
 
   const handleTabChange = (value: string) => {
-    if (!tabsListRef.current) return;
-    const tab = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
-    if (tab) {
-      scrollCategoryToCenter(tab, tabsListRef.current);
+    const newIndex = menuCategories.indexOf(value);
+    const previousIndex = previousTabIndexRef.current;
+
+    if (newIndex !== -1) {
+      if (tabsListRef.current) {
+        const tab = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
+        if (tab) {
+            scrollCategoryToCenter(tab);
+        }
+      }
+      previousTabIndexRef.current = newIndex;
     }
   };
 
   useEffect(() => {
-    const firstCategory = menuCategories[0];
-    if (firstCategory && tabsListRef.current) {
-        const tab = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${firstCategory}"]`);
-        if (tab) {
-            // Delay to ensure layout is stable
-            setTimeout(() => scrollCategoryToCenter(tab, tabsListRef.current!), 100);
-        }
+    // Center the initial tab on load
+    const initialTabValue = menuCategories[0];
+    if (initialTabValue && tabsListRef.current) {
+      const tab = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${initialTabValue}"]`);
+      if (tab) {
+        // Use a timeout to ensure layout is stable before scrolling
+        setTimeout(() => scrollCategoryToCenter(tab), 100);
+      }
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -56,6 +68,7 @@ export function MenuTabs() {
                   <TabsTrigger 
                     key={category} 
                     value={category} 
+                    data-value={category}
                     className="px-6 py-2 text-base capitalize rounded-full transition-colors duration-300 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-lg"
                   >
                     {category.toLowerCase()}
