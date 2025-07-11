@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { menu } from "@/data/menu";
 import { DishCard } from "@/components/DishCard";
@@ -13,7 +13,7 @@ export function MenuTabs() {
 
   const handleTabChange = (value: string) => {
     // Find the button with the matching data-value attribute
-    const trigger = tabsListRef.current?.querySelector<HTMLButtonElement>(`[data-value="${value}"]`);
+    const trigger = tabsListRef.current?.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
     if (trigger) {
       trigger.scrollIntoView({
         behavior: "smooth",
@@ -22,6 +22,15 @@ export function MenuTabs() {
       });
     }
   };
+  
+  // Ensure the first tab is centered on initial load
+  useEffect(() => {
+    const firstCategory = menuCategories[0];
+    if (firstCategory) {
+       // A small delay ensures the elements are rendered and measurable
+      setTimeout(() => handleTabChange(firstCategory), 100);
+    }
+  }, []);
 
   return (
     <Tabs defaultValue={menuCategories[0]} className="w-full" onValueChange={handleTabChange}>
