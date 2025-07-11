@@ -1,6 +1,7 @@
 import { GPayIcon } from "./icons/GPayIcon";
 import { PaytmIcon } from "./icons/PaytmIcon";
 import { PhonePeIcon } from "./icons/PhonePeIcon";
+import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 import { Separator } from "./ui/separator";
 
 export function Footer() {
@@ -12,10 +13,16 @@ export function Footer() {
           <p className="mt-2">Contact us on WhatsApp for bulk orders and events.</p>
         </div>
         <div className="mb-8">
-          <p className="font-semibold text-lg mb-2">WhatsApp:</p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-x-6 gap-y-2">
-            <a href="https://wa.me/919898701230" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-lg">9898701230</a>
-            <a href="https://wa.me/918780063939" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-lg">8780063939</a>
+          <p className="font-semibold text-lg mb-4">WhatsApp:</p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-x-8 gap-y-4">
+            <a href="https://wa.me/919898701230" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity text-lg font-semibold">
+              <WhatsAppIcon className="w-6 h-6" />
+              <span>9898701230</span>
+            </a>
+            <a href="https://wa.me/918780063939" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity text-lg font-semibold">
+              <WhatsAppIcon className="w-6 h-6" />
+              <span>8780063939</span>
+            </a>
           </div>
         </div>
         
