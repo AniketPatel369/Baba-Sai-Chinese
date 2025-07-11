@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { MenuItem } from "@/data/menu";
 
@@ -12,17 +13,28 @@ export function DishCard({ item }: DishCardProps) {
   ].filter(Boolean) as { label: string; price: number }[];
 
   return (
-    <Card className="flex flex-col h-full border-primary/20 hover:border-primary/50 transition-colors duration-300 bg-card shadow-lg hover:shadow-primary/20 rounded-xl">
-      <CardHeader className="flex-row items-center justify-between">
-        <CardTitle className="text-xl font-body font-bold text-foreground">{item.name}</CardTitle>
+    <Card className="flex flex-col h-full bg-card border-border/50 hover:border-primary/70 transition-all duration-300 shadow-lg hover:shadow-primary/20 rounded-xl overflow-hidden group">
+      <div className="relative w-full h-40">
+        <Image
+          src="https://placehold.co/400x300"
+          alt={item.name}
+          layout="fill"
+          objectFit="cover"
+          className="transition-transform duration-300 group-hover:scale-105"
+          data-ai-hint="chinese food"
+        />
+      </div>
+      <CardHeader className="flex-row items-start justify-between p-4">
+        <CardTitle className="text-xl font-headline text-foreground tracking-wide">{item.name}</CardTitle>
       </CardHeader>
-      <CardContent className="flex-grow flex items-end justify-end">
+      <CardContent className="flex-grow flex items-end justify-between p-4 pt-0">
+        <div></div>
         {prices.length > 0 && (
           <div className="flex flex-col items-end gap-1">
             {prices.map(({ label, price }) => (
               <div key={label} className="text-right">
                 <span className="text-sm text-muted-foreground mr-2">{label}</span>
-                <span className="text-lg font-bold text-primary">Rs {price}</span>
+                <span className="text-xl font-bold font-headline text-primary">Rs {price}</span>
               </div>
             ))}
           </div>

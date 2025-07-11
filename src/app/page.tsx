@@ -6,7 +6,7 @@ import { WhatsAppButton } from '@/components/WhatsAppButton';
 export default function Home() {
   return (
     <div className="bg-background text-foreground font-body">
-      <main className="container mx-auto px-4">
+      <main className="container mx-auto px-4 pb-16">
         <Header />
         <MenuTabs />
       </main>
