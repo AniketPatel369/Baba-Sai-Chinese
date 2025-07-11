@@ -10,29 +10,41 @@ const menuCategories = Object.keys(menu);
 
 export function MenuTabs() {
   const tabsListRef = useRef<HTMLDivElement>(null);
+  const scrollAreaRef = useRef<HTMLDivElement>(null);
+
+  const centerTab = (tabValue: string) => {
+    if (!tabsListRef.current || !scrollAreaRef.current) return;
+
+    const tabTrigger = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${tabValue}"]`);
+    const scrollAreaViewport = scrollAreaRef.current.querySelector<HTMLDivElement>('[data-radix-scroll-area-viewport]');
+
+    if (tabTrigger && scrollAreaViewport) {
+      const scrollAreaRect = scrollAreaViewport.getBoundingClientRect();
+      const tabRect = tabTrigger.getBoundingClientRect();
+
+      const scrollOffset =
+        tabRect.left -
+        scrollAreaRect.left +
+        (tabRect.width - scrollAreaRect.width) / 2 +
+        scrollAreaViewport.scrollLeft;
+
+      scrollAreaViewport.scrollTo({
+        left: scrollOffset,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   const handleTabChange = (value: string) => {
     // A small delay ensures the element is rendered and measurable before scrolling
-    setTimeout(() => {
-      if (tabsListRef.current) {
-        const trigger = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
-        if (trigger) {
-          trigger.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "center",
-          });
-        }
-      }
-    }, 50);
+    setTimeout(() => centerTab(value), 50);
   };
   
   // Ensure the first tab is centered on initial load
   useEffect(() => {
     const firstCategory = menuCategories[0];
     if (firstCategory) {
-      // Delaying the initial scroll slightly can help ensure the layout is stable.
-      const timer = setTimeout(() => handleTabChange(firstCategory), 100);
+      const timer = setTimeout(() => centerTab(firstCategory), 100);
       return () => clearTimeout(timer);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -41,7 +53,7 @@ export function MenuTabs() {
   return (
     <Tabs defaultValue={menuCategories[0]} className="w-full" onValueChange={handleTabChange}>
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm -mx-4 px-4 py-2 flex justify-center">
-        <ScrollArea className="w-full max-w-max whitespace-nowrap">
+        <ScrollArea ref={scrollAreaRef} className="w-full max-w-max whitespace-nowrap">
           <TabsList ref={tabsListRef} className="inline-flex h-auto p-1 bg-card border border-border/50 rounded-full">
             {menuCategories.map((category) => (
               <TabsTrigger 
