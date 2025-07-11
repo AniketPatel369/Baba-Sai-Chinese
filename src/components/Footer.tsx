@@ -21,7 +21,7 @@ export function Footer() {
           <p className="mb-4 font-semibold">We Accept:</p>
           <div className="flex justify-center items-center gap-6">
             <PaytmIcon className="h-8 w-auto" />
-            <GPayIcon className="h-8 w-auto" />
+            <GPayIcon className="h-8 w-auto text-foreground" />
             <PhonePeIcon className="h-10 w-auto" />
           </div>
         </div>

@@ -1,47 +1,57 @@
 export interface MenuItem {
   name: string;
-  prices?: number[];
-  category: string;
+  half?: number;
+  full?: number;
 }
 
-export const menuCategories = ["Soup", "Noodles", "Manchurian", "Bhel", "Paneer", "Rice"];
-
-export const menuItems: MenuItem[] = [
-  // Soup
-  { name: "Veg. Manchow Soup", prices: [70], category: "Soup" },
-  { name: "Veg. Hot & Sour Soup", prices: [70], category: "Soup" },
-  { name: "Tomato Soup", prices: [60], category: "Soup" },
-
-  // Noodles
-  { name: "Veg. Hongkong Noodles", prices: [100], category: "Noodles" },
-  { name: "Veg. Hakka Noodles", prices: [70, 100], category: "Noodles" },
-  { name: "Veg. Noodle Manchurian", prices: [70, 100], category: "Noodles" },
-  { name: "Veg. Schezwan Noodles", prices: [70, 100], category: "Noodles" },
-  { name: "Veg. Singapuri Noodles", prices: [100], category: "Noodles" },
-  { name: "Veg. Paneer Noodles", prices: [150], category: "Noodles" },
-  { name: "Veg. Rice Noodles", prices: [100], category: "Noodles" },
-  { name: "Veg. Gravy Noodles", prices: [100], category: "Noodles" },
-  { name: "Singapore Noodles", prices: [90, 120], category: "Noodles" },
-  { name: "Chilli Garlic Noodles", prices: [80, 110], category: "Noodles" },
-
-  // Manchurian
-  { name: "Veg. Manchurian Dry", prices: [80, 120], category: "Manchurian" },
-  { name: "Veg. Manchurian Gravy", prices: [90, 130], category: "Manchurian" },
-  { name: "Gobi Manchurian", prices: [80, 120], category: "Manchurian" },
-
-  // Bhel
-  { name: "Chinese Bhel", prices: [70, 100], category: "Bhel" },
-  { name: "Bombay Bhel", prices: [70, 100], category: "Bhel" },
-  { name: "Gravy Bhel", prices: [100], category: "Bhel" },
-  { name: "Dry Bhel", prices: [50], category: "Bhel" },
-
-  // Paneer
-  { name: "Paneer Chilli Dry", prices: [100, 150], category: "Paneer" },
-  { name: "Paneer Chilli Gravy", prices: [110, 160], category: "Paneer" },
-  { name: "Paneer 65", prices: [120], category: "Paneer" },
-
-  // Rice
-  { name: "Veg. Fried Rice", prices: [70, 100], category: "Rice" },
-  { name: "Schezwan Fried Rice", prices: [80, 110], category: "Rice" },
-  { name: "Triple Schezwan Rice", prices: [120], category: "Rice" },
-];
+export const menu: Record<string, MenuItem[]> = {
+  "SOUP": [
+    { name: "Manchau Soup", half: 70 },
+    { name: "Hot & Sour Soup", half: 70 },
+    { name: "Tomato Soup", half: 70 },
+    { name: "Paneer Soup", full: 100 },
+    { name: "Manchurian Soup", half: 70 },
+    { name: "Noodle's Soup", half: 70 },
+    { name: "Babycorn Soup", full: 120 }
+  ],
+  "NOODLES": [
+    { name: "Veg. Hongkong Noodles", full: 100 },
+    { name: "Veg. Hakka Noodles", half: 70, full: 100 },
+    { name: "Veg. Noodle Manchurian", half: 70, full: 100 },
+    { name: "Veg. Schezwan Noodles", half: 70, full: 100 },
+    { name: "Veg. Singapuri Noodles", full: 100 },
+    { name: "Veg. Paneer Noodles", full: 150 },
+    { name: "Veg. Rice Noodles", full: 100 },
+    { name: "Veg. Gravy Noodles", full: 100 }
+  ],
+  "BHEL": [
+    { name: "Chinese Bhel", half: 70, full: 100 },
+    { name: "Bombay Bhel", half: 70, full: 100 },
+    { name: "Gravy Bhel", full: 100 }
+  ],
+  "MANCHURIAN": [
+    { name: "Veg. Manchurian Dry", half: 70, full: 100 },
+    { name: "Veg. Manchurian Gravy", half: 70, full: 100 },
+    { name: "Veg. Manchurian 65", half: 70, full: 100 },
+    { name: "Schezwan Manchurian Dry", half: 70, full: 100 },
+    { name: "Schezwan Manchurian Gravy", half: 70, full: 100 }
+  ],
+  "PANEER": [
+    { name: "Paneer Chilli Dry", half: 90, full: 140 },
+    { name: "Paneer Chilli Gravy", half: 90, full: 140 },
+    { name: "Paneer Chilli 65", full: 140 },
+    { name: "Paneer Manchurian Dry", full: 150 },
+    { name: "Paneer Manchurian Gravy", full: 150 }
+  ],
+  "RICE": [
+    { name: "Veg. Rice", half: 70, full: 100 },
+    { name: "Veg. Hong Kong Rice", full: 100 },
+    { name: "Veg. Machurian Rice", half: 70, full: 100 },
+    { name: "Veg. Singapuri Rice", full: 100 },
+    { name: "Veg. Paneer Rice", full: 140 },
+    { name: "Veg. Triple Rice", full: 150 },
+    { name: "Veg. Schezwan Rice", half: 70, full: 100 },
+    { name: "Veg. Combination Rice", half: 70, full: 100 },
+    { name: "Babycorn Rice", full: 120 }
+  ]
+};
