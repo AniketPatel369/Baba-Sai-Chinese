@@ -1,16 +1,10 @@
 import * as React from "react"
-import { SVGProps } from "react"
+import type { SVGProps } from "react"
 
 export const PaytmIcon = (props: SVGProps<SVGSVGElement>) => (
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    width={24}
-    height={24}
-    fill="currentColor"
-    className="text-[#5A00A0]"
-    {...props}
-  >
-    <path fillRule="evenodd" d="M15.46 12.924H8.485V8.53h7.028l-2.023 2.197 2.024 2.197h-.054zm2.146.012L24 6h-9.92l3.492 3.633-3.481 3.737h3.515zM8.423 6H0l6.552 7.02L0 20.038h8.423v-5.539H3.12l3.422-3.74-3.134-3.22h4.96v-1.54z" transform="translate(0 -6)" />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" fillRule="evenodd" {...props}>
+        <path d="M95.678 42.9L110 29.835l-6.784-13.516z" fill="#097939"/>
+        <path d="M90.854 42.9l14.322-13.065-6.784-13.516z" fill="#ed752e"/>
+        <path d="M22.41 16.47l-6.03 21.475 21.407.15 5.88-21.625h5.427l-7.05 25.14c-.27.96-1.298 1.74-2.295 1.74H12.31c-1.664 0-2.65-1.3-2.2-2.9l6.724-23.98zm66.182-.15h5.427l-7.538 27.03h-5.58zM49.698 27.582l27.136-.15 1.81-5.707H51.054l1.658-5.256 29.4-.27c1.83-.017 2.92 1.4 2.438 3.167L81.78 29.49c-.483 1.766-2.36 3.197-4.19 3.197H53.316L50.454 43.8h-5.28z" fill="#747474"/>
+    </svg>
 )
