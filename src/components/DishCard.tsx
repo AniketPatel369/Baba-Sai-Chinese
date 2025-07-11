@@ -16,7 +16,7 @@ export function DishCard({ item }: DishCardProps) {
     <Card className="flex flex-col h-full bg-card border-border/50 hover:border-primary/70 transition-all duration-300 shadow-lg hover:shadow-primary/20 rounded-xl overflow-hidden group">
       <div className="relative w-full h-40">
         <Image
-          src="https://placehold.co/400x300"
+          src="https://images.unsplash.com/photo-1664717698774-84f62382613b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhLWJvd2wtb2YtcmljZS13aXRoLXZlZ2V0YWJsZXMtTVZNb2hKQmllbzR8ZW58MHx8fHwxNzUyMjEyNzczfDA&ixlib=rb-4.1.0&q=80&w=1080"
           alt={item.name}
           layout="fill"
           objectFit="cover"
