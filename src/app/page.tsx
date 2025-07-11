@@ -2,6 +2,7 @@ import { Header } from '@/components/Header';
 import { MenuTabs } from '@/components/MenuTabs';
 import { Footer } from '@/components/Footer';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
+import { CallButton } from '@/components/CallButton';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <CallButton />
     </div>
   );
 }
