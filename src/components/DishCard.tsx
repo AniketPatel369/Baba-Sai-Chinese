@@ -29,7 +29,7 @@ export function DishCard({ item }: DishCardProps) {
       {/* Image Section */}
       <div className="relative w-24 h-24 rounded-md overflow-hidden shadow-sm flex-shrink-0">
         <Image
-          src="https://placehold.co/100x100.png"
+          src={item.image || "https://placehold.co/100x100.png"}
           alt={item.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
