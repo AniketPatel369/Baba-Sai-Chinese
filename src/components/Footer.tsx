@@ -22,7 +22,7 @@ export function Footer() {
         <div className="mb-8">
           <p className="mb-4 font-semibold text-lg">We Accept:</p>
           <div className="flex justify-center items-center gap-6">
-            <GPayIcon className="h-8 w-auto text-foreground" />
+            <GPayIcon className="h-8 w-auto" />
             <PhonePeIcon className="h-8 w-auto" />
             <PaytmIcon className="h-8 w-auto" />
           </div>
@@ -31,7 +31,9 @@ export function Footer() {
         <Separator className="my-6 max-w-sm mx-auto bg-border/50" />
 
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} BABA SAI CHINESE. All Rights Reserved.
+          &copy; {new Date().getFullYear()}{' '}
+          <span className="font-bold text-primary">BABA SAI CHINESE</span>. All
+          Rights Reserved.
         </p>
       </div>
     </footer>
