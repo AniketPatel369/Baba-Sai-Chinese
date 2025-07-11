@@ -16,8 +16,8 @@ export function Header() {
       <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary tracking-wider uppercase">
         BABA SAI CHINESE
       </h1>
-      <div className="flex items-center gap-3 mt-3">
-        <p className="text-lg md:text-xl text-muted-foreground uppercase font-sans tracking-widest">
+      <div className="flex items-center gap-3 mt-4">
+        <p className="font-cursive text-3xl md:text-4xl text-muted-foreground">
           Home Like Food
         </p>
         <PureVegIcon className="w-8 h-8" />

@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         body: ['Open Sans', 'sans-serif'],
         headline: ['Anton', 'sans-serif'],
+        cursive: ['"Dancing Script"', 'cursive'],
         code: ['monospace'],
       },
       colors: {
