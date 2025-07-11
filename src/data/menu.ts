@@ -46,7 +46,7 @@ export const menu: Record<string, MenuItem[]> = {
     { name: "Paneer Manchurian Gravy", full: 150, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBtYW5jaHVyaWFuJTIwZ3Jhdnl8ZW58MHx8fHwxNzUyMjI0MDE3fDA&ixlib=rb-4.1.0&q=80&w=1080" }
   ],
   "RICE": [
-    { name: "Veg. Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1596560544141-f0239cb93e10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZWclMjByaWNlfGVufDB8fHx8MTc1MjIyNDAxN3ww&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Veg. Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1664717698774-84f62382613b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhLWJvd2wtb2YtcmljZS13aXRoLXZlZ2V0YWJsZXMtTVZNb2hKQmllbzR8ZW58MHx8fHwxNzUyMjEyNzczfDA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Veg. Hong Kong Rice", full: 100, image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob25nJTIwa29uZyUyMHJpY2V8ZW58MHx8fHwxNzUyMjI0MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Veg. Machurian Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaHVyaWFuJTIwcmljZXxlbnwwfHx8fDE3NTIyMjQwMTh8MA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Veg. Singapuri Rice", full: 100, image: "https://images.unsplash.com/photo-1583495892419-74e7c36a4959?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaW5nYXB1cmklMjByaWNlfGVufDB8fHx8MTc1MjIyNDA0N3ww&ixlib=rb-4.1.0&q=80&w=1080" },
