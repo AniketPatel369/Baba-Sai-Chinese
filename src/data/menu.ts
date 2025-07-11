@@ -22,7 +22,7 @@ export const menu: Record<string, MenuItem[]> = {
     { name: "Veg. Noodle Manchurian", half: 70, full: 100, image: "https://images.unsplash.com/photo-1547928576-b822bc410bdf?auto=format&fit=crop&w=1080&q=80" },
     { name: "Veg. Schezwan Noodles", half: 70, full: 100, image: "https://images.unsplash.com/photo-1741253671929-78e337693384?auto=format&fit=crop&w=1080&q=80" },
     { name: "Veg. Singapuri Noodles", full: 100, image: "https://images.unsplash.com/photo-1722853440598-75e66ace0a13?auto=format&fit=crop&w=1080&q=80" },
-    { name: "Veg. Paneer Noodles", full: 150, image: "https://images.unsplash.com/photo-1658463990393-972134b22c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBub29kbGVzfGVufDB8fHx8MTc1MjIyNDAwOHww&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Veg. Paneer Noodles", full: 150, image: "/food/veg-paneer-noodles.jpg" },
     { name: "Veg. Rice Noodles", full: 100, image: "https://images.unsplash.com/photo-1569718212165-d803422693cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaWNlJTIwbm9vZGxlc3xlbnwwfHx8fDE3NTIyMjQwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Veg. Gravy Noodles", full: 100, image: "https://images.unsplash.com/photo-1666307628741-c65334fed027?auto=format&fit=crop&w=1080&q=80" }
   ],

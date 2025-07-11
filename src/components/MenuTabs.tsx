@@ -4,7 +4,7 @@ import { useRef, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { menu } from "@/data/menu";
 import { DishCard } from "@/components/DishCard";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const menuCategories = Object.keys(menu);
 
@@ -31,11 +31,9 @@ export function MenuTabs() {
   };
   
   const handleTabChange = (value: string) => {
-    // A small delay can sometimes help ensure the DOM is ready for measurement, especially on initial load.
     setTimeout(() => centerTab(value), 50);
   };
 
-  // Ensure the first tab is centered on initial load
   useEffect(() => {
     const firstCategory = menuCategories[0];
     if (firstCategory) {
@@ -48,7 +46,7 @@ export function MenuTabs() {
   return (
     <Tabs defaultValue={menuCategories[0]} className="w-full" onValueChange={handleTabChange}>
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm -mx-4 px-4 py-2 flex justify-center">
-        <ScrollArea ref={scrollAreaRef} className="w-full max-w-max whitespace-nowrap">
+        <ScrollArea ref={scrollAreaRef} className="w-full max-w-max whitespace-nowrap no-scrollbar">
           <TabsList className="inline-flex h-auto p-1 bg-card border border-border/50 rounded-full">
             {menuCategories.map((category) => (
               <TabsTrigger 
@@ -60,7 +58,6 @@ export function MenuTabs() {
               </TabsTrigger>
             ))}
           </TabsList>
-          <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </div>
       {menuCategories.map((category) => (
