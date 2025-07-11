@@ -18,39 +18,39 @@ export const menu: Record<string, MenuItem[]> = {
   ],
   "NOODLES": [
     { name: "Veg. Hongkong Noodles", full: 100, image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob25na29uZyUyMG5vb2RsZXN8ZW58MHx8fHwxNzUyMjI0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Hakka Noodles", half: 70, full: 100, image: "https://images.unsplash.com/photo-1647434793693-855521def287?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYWtrYSUyMG5vb2RsZXN8ZW58MHx8fHwxNzUyMjI0MDA1fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Noodle Manchurian", half: 70, full: 100, image: "https://images.unsplash.com/photo-1618439369102-48a56aa22863?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxub29kbGUlMjBtYW5jaHVyaWFufGVufDB8fHx8MTc1MjIyNDAwNXww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Schezwan Noodles", half: 70, full: 100, image: "https://images.unsplash.com/photo-1606196245638-d6d3969a531f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hlemRhbiUyMG5vb2RsZXN8ZW58MHx8fHwxNzUyMjI0MDA2fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Singapuri Noodles", full: 100, image: "https://images.unsplash.com/photo-1552611052-33e04de081de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaW5nYXB1cmklMjBub29kbGVzfGVufDB8fHx8MTc1MjIyNDAwN3ww&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Veg. Hakka Noodles", half: 70, full: 100, image: "https://images.unsplash.com/photo-1679279726940-be5ce80c632c?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Veg. Noodle Manchurian", half: 70, full: 100, image: "https://images.unsplash.com/photo-1547928576-b822bc410bdf?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Veg. Schezwan Noodles", half: 70, full: 100, image: "https://images.unsplash.com/photo-1741253671929-78e337693384?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Veg. Singapuri Noodles", full: 100, image: "https://images.unsplash.com/photo-1722853440598-75e66ace0a13?auto=format&fit=crop&w=1080&q=80" },
     { name: "Veg. Paneer Noodles", full: 150, image: "https://images.unsplash.com/photo-1658463990393-972134b22c83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBub29kbGVzfGVufDB8fHx8MTc1MjIyNDAwOHww&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Veg. Rice Noodles", full: 100, image: "https://images.unsplash.com/photo-1569718212165-d803422693cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaWNlJTIwbm9vZGxlc3xlbnwwfHx8fDE3NTIyMjQwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Gravy Noodles", full: 100, image: "https://images.unsplash.com/photo-1597829147514-2a62e08a8a48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmF2eSUyMG5vb2RsZXN8ZW58MHx8fHwxNzUyMjI0MDA5fDA&ixlib=rb-4.1.0&q=80&w=1080" }
+    { name: "Veg. Gravy Noodles", full: 100, image: "https://images.unsplash.com/photo-1666307628741-c65334fed027?auto=format&fit=crop&w=1080&q=80" }
   ],
   "BHEL": [
-    { name: "Chinese Bhel", half: 70, full: 100, image: "https://images.unsplash.com/photo-1604382354936-07c5d9983d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmhlbHxlbnwwfHx8fDE3NTIyMjQwMDl8MA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Bombay Bhel", half: 70, full: 100, image: "https://images.unsplash.com/photo-1589301760014-d929f39791e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib21iYXklMjBiaGVsfGVufDB8fHx8MTc1MjIyNDAxMHww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Gravy Bhel", full: 100, image: "https://images.unsplash.com/photo-1628585352638-6a371453b344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmF2eSUyMGJoZWx8ZW58MHx8fHwxNzUyMjI0MDExfDA&ixlib=rb-4.1.0&q=80&w=1080" }
+    { name: "Chinese Bhel", half: 70, full: 100, image: "https://images.unsplash.com/photo-1716535232838-cc7642aa19d9?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Bombay Bhel", half: 70, full: 100, image: "https://images.unsplash.com/photo-1716535232835-6d56282dfe8a?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Gravy Bhel", full: 100, image: "https://images.unsplash.com/photo-1714611446765-3e85644ea4ae?auto=format&fit=crop&w=1080&q=80" }
   ],
   "MANCHURIAN": [
-    { name: "Veg. Manchurian Dry", half: 70, full: 100, image: "https://images.unsplash.com/photo-1604382354936-07c5d9983d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaHVyaWFuJTIwZHJ5fGVufDB8fHx8MTc1MjIyNDAxMXww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Manchurian Gravy", half: 70, full: 100, image: "https://images.unsplash.com/photo-1618439369102-48a56aa22863?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaHVyaWFuJTIwZ3Jhdnl8ZW58MHx8fHwxNzUyMjI0MDEyfDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Manchurian 65", half: 70, full: 100, image: "https://images.unsplash.com/photo-1563245365-68936663f044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaHVyaWFuJTIwNjV8ZW58MHx8fHwxNzUyMjI0MDEyfDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Schezwan Manchurian Dry", half: 70, full: 100, image: "https://images.unsplash.com/photo-1606196245638-d6d3969a531f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hlemRhbiUyMG1hbmNodXJpYW4lMjBkcnl8ZW58MHx8fHwxNzUyMjI0MDEzfDA&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Veg. Manchurian Dry", half: 70, full: 100, image: "https://images.unsplash.com/photo-1515516969-d4008cc6241a?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Veg. Manchurian Gravy", half: 70, full: 100, image: "/food/veg-manchurian-gravy.jpg" },
+    { name: "Veg. Manchurian 65", half: 70, full: 100, image: "https://images.unsplash.com/photo-1572363644253-3daacc7acd0d?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Schezwan Manchurian Dry", half: 70, full: 100, image: "https://images.unsplash.com/photo-1610545676806-14c7ab3ce782?auto=format&fit=crop&w=1080&q=80" },
     { name: "Schezwan Manchurian Gravy", half: 70, full: 100, image: "https://images.unsplash.com/photo-1597829147514-2a62e08a8a48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hlemRhbiUyMG1hbmNodXJpYW4lMjBncmF2eXxlbnwwfHx8fDE3NTIyMjQwMTR8MA&ixlib=rb-4.1.0&q=80&w=1080" }
   ],
   "PANEER": [
-    { name: "Paneer Chilli Dry", half: 90, full: 140, image: "https://images.unsplash.com/photo-1599451481393-271587ba2bd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBjaGlsbGklMjBkcnl8ZW58MHx8fHwxNzUyMjI0MDE0fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Paneer Chilli Gravy", half: 90, full: 140, image: "https://images.unsplash.com/photo-1565299480-927801923190?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBjaGlsbGklMjBncmF2eXxlbnwwfHx8fDE3NTIyMjQwMTV8MA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Paneer Chilli 65", full: 140, image: "https://images.unsplash.com/photo-1563245365-68936663f044?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBjaGlsbGklMjA2NXxlbnwwfHx8fDE3NTIyMjQwMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Paneer Chilli Dry", half: 90, full: 140, image: "https://images.unsplash.com/photo-1701579231320-cc2f7acad3cd?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Paneer Chilli Gravy", half: 90, full: 140, image: "https://images.unsplash.com/photo-1690401769082-5f475f87fb22?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Paneer Chilli 65", full: 140, image: "https://images.unsplash.com/photo-1551881192-002e02ad3d87?auto=format&fit=crop&w=1080&q=80" },
     { name: "Paneer Manchurian Dry", full: 150, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBtYW5jaHVyaWFuJTIwZHJ5fGVufDB8fHx8MTc1MjIyNDAxNnww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Paneer Manchurian Gravy", full: 150, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjBtYW5jaHVyaWFuJTIwZ3Jhdnl8ZW58MHx8fHwxNzUyMjI0MDE3fDA&ixlib=rb-4.1.0&q=80&w=1080" }
+    { name: "Paneer Manchurian Gravy", full: 150, image: "https://images.unsplash.com/photo-1690403160225-3db8cc8babd5?auto=format&fit=crop&w=1080&q=80" }
   ],
   "RICE": [
     { name: "Veg. Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1664717698774-84f62382613b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhLWJvd2wtb2YtcmljZS13aXRoLXZlZ2V0YWJsZXMtTVZNb2hKQmllbzR8ZW58MHx8fHwxNzUyMjEyNzczfDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Hong Kong Rice", full: 100, image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob25nJTIwa29uZyUyMHJpY2V8ZW58MHx8fHwxNzUyMjI0MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Machurian Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaHVyaWFuJTIwcmljZXxlbnwwfHx8fDE3NTIyMjQwMTh8MA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Singapuri Rice", full: 100, image: "https://images.unsplash.com/photo-1583495892419-74e7c36a4959?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaW5nYXB1cmklMjByaWNlfGVufDB8fHx8MTc1MjIyNDA0N3ww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Veg. Paneer Rice", full: 140, image: "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5lZXIlMjByaWNlfGVufDB8fHx8MTc1MjIyNDA0OHww&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Veg. Hong Kong Rice", full: 100, image: "https://images.unsplash.com/photo-1540100716001-4b432820e37f?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Veg. Machurian Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1705174299330-939dd03cc864?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Veg. Singapuri Rice", full: 100, image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=1080&q=80" },
+    { name: "Veg. Paneer Rice", full: 140, image: "https://images.unsplash.com/photo-1751618646882-4221d5e3b1c2?auto=format&fit=crop&w=1080&q=80" },
     { name: "Veg. Triple Rice", full: 150, image: "https://images.unsplash.com/photo-1631292782298-a729221b017b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmlwbGUlMjByaWNlfGVufDB8fHx8MTc1MjIyNDA0OXww&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Veg. Schezwan Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hlemRhbiUyMHJpY2V8ZW58MHx8fHwxNzUyMjI0MDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Veg. Combination Rice", half: 70, full: 100, image: "https://images.unsplash.com/photo-1596560544141-f0239cb93e10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb21iaW5hdGlvbiUyMHJpY2V8ZW58MHx8fHwxNzUyMjI0MDUwfDA&ixlib=rb-4.1.0&q=80&w=1080" },
