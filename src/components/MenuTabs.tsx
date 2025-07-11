@@ -4,7 +4,6 @@ import { useRef, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { menu } from "@/data/menu";
 import { DishCard } from "@/components/DishCard";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 const menuCategories = Object.keys(menu);
 
@@ -28,7 +27,7 @@ export function MenuTabs() {
     if (!tabsListRef.current) return;
     const tab = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
     if (tab) {
-      setTimeout(() => scrollCategoryToCenter(tab, tabsListRef.current!), 50);
+      scrollCategoryToCenter(tab, tabsListRef.current);
     }
   };
 
@@ -37,6 +36,7 @@ export function MenuTabs() {
     if (firstCategory && tabsListRef.current) {
         const tab = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${firstCategory}"]`);
         if (tab) {
+            // Delay to ensure layout is stable
             setTimeout(() => scrollCategoryToCenter(tab, tabsListRef.current!), 100);
         }
     }
@@ -50,7 +50,7 @@ export function MenuTabs() {
       </p>
       <Tabs defaultValue={menuCategories[0]} className="w-full" onValueChange={handleTabChange}>
         <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm -mx-4 px-4 py-2 flex justify-center">
-            <div ref={tabsListRef} className="w-full max-w-max whitespace-nowrap overflow-x-auto">
+            <div ref={tabsListRef} className="w-full max-w-max whitespace-nowrap overflow-x-auto no-scrollbar">
               <TabsList className="inline-flex h-auto p-1 bg-card border border-border/50 rounded-full">
                 {menuCategories.map((category) => (
                   <TabsTrigger 
