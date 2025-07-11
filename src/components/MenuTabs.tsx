@@ -9,37 +9,32 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 const menuCategories = Object.keys(menu);
 
 export function MenuTabs() {
-  const tabsListRef = useRef<HTMLDivElement>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
   const centerTab = (tabValue: string) => {
-    if (!tabsListRef.current || !scrollAreaRef.current) return;
+    const scrollContainer = scrollAreaRef.current?.querySelector<HTMLDivElement>('[data-radix-scroll-area-viewport]');
+    if (!scrollContainer) return;
 
-    const tabTrigger = tabsListRef.current.querySelector<HTMLButtonElement>(`button[data-value="${tabValue}"]`);
-    const scrollAreaViewport = scrollAreaRef.current.querySelector<HTMLDivElement>('[data-radix-scroll-area-viewport]');
+    const tabElement = scrollContainer.querySelector<HTMLButtonElement>(`button[data-value="${tabValue}"]`);
+    if (!tabElement) return;
 
-    if (tabTrigger && scrollAreaViewport) {
-      const scrollAreaRect = scrollAreaViewport.getBoundingClientRect();
-      const tabRect = tabTrigger.getBoundingClientRect();
+    const elementLeft = tabElement.offsetLeft;
+    const elementWidth = tabElement.offsetWidth;
+    const containerWidth = scrollContainer.offsetWidth;
 
-      const scrollOffset =
-        tabRect.left -
-        scrollAreaRect.left +
-        (tabRect.width - scrollAreaRect.width) / 2 +
-        scrollAreaViewport.scrollLeft;
+    const scrollTo = elementLeft - (containerWidth / 2) + (elementWidth / 2);
 
-      scrollAreaViewport.scrollTo({
-        left: scrollOffset,
-        behavior: 'smooth',
-      });
-    }
-  };
-
-  const handleTabChange = (value: string) => {
-    // A small delay ensures the element is rendered and measurable before scrolling
-    setTimeout(() => centerTab(value), 50);
+    scrollContainer.scrollTo({
+      left: scrollTo,
+      behavior: 'smooth',
+    });
   };
   
+  const handleTabChange = (value: string) => {
+    // A small delay can sometimes help ensure the DOM is ready for measurement, especially on initial load.
+    setTimeout(() => centerTab(value), 50);
+  };
+
   // Ensure the first tab is centered on initial load
   useEffect(() => {
     const firstCategory = menuCategories[0];
@@ -54,7 +49,7 @@ export function MenuTabs() {
     <Tabs defaultValue={menuCategories[0]} className="w-full" onValueChange={handleTabChange}>
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm -mx-4 px-4 py-2 flex justify-center">
         <ScrollArea ref={scrollAreaRef} className="w-full max-w-max whitespace-nowrap">
-          <TabsList ref={tabsListRef} className="inline-flex h-auto p-1 bg-card border border-border/50 rounded-full">
+          <TabsList className="inline-flex h-auto p-1 bg-card border border-border/50 rounded-full">
             {menuCategories.map((category) => (
               <TabsTrigger 
                 key={category} 
