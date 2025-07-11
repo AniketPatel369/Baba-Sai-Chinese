@@ -12,24 +12,26 @@ export function MenuTabs() {
   const tabsListRef = useRef<HTMLDivElement>(null);
 
   const handleTabChange = (value: string) => {
-    // Find the button with the matching data-value attribute
-    const trigger = tabsListRef.current?.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
-    if (trigger) {
-      trigger.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center",
-      });
-    }
+    // A small delay ensures the element is rendered and measurable before scrolling
+    setTimeout(() => {
+      const trigger = tabsListRef.current?.querySelector<HTMLButtonElement>(`button[data-value="${value}"]`);
+      if (trigger) {
+        trigger.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center",
+        });
+      }
+    }, 50);
   };
   
   // Ensure the first tab is centered on initial load
   useEffect(() => {
     const firstCategory = menuCategories[0];
     if (firstCategory) {
-       // A small delay ensures the elements are rendered and measurable
-      setTimeout(() => handleTabChange(firstCategory), 100);
+      handleTabChange(firstCategory);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

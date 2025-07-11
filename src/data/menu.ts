@@ -36,7 +36,7 @@ export const menu: Record<string, MenuItem[]> = {
     { name: "Veg. Manchurian Gravy", half: 70, full: 100, image: "/food/veg-manchurian-gravy.jpg" },
     { name: "Veg. Manchurian 65", half: 70, full: 100, image: "https://images.unsplash.com/photo-1572363644253-3daacc7acd0d?auto=format&fit=crop&w=1080&q=80" },
     { name: "Schezwan Manchurian Dry", half: 70, full: 100, image: "https://images.unsplash.com/photo-1610545676806-14c7ab3ce782?auto=format&fit=crop&w=1080&q=80" },
-    { name: "Schezwan Manchurian Gravy", half: 70, full: 100, image: "https://images.unsplash.com/photo-1597829147514-2a62e08a8a48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2hlemRhbiUyMG1hbmNodXJpYW4lMjBncmF2eXxlbnwwfHx8fDE3NTIyMjQwMTR8MA&ixlib=rb-4.1.0&q=80&w=1080" }
+    { name: "Schezwan Manchurian Gravy", half: 70, full: 100, image: "/food/schezwan-manchurian-gravy.jpg" }
   ],
   "PANEER": [
     { name: "Paneer Chilli Dry", half: 90, full: 140, image: "https://images.unsplash.com/photo-1701579231320-cc2f7acad3cd?auto=format&fit=crop&w=1080&q=80" },
