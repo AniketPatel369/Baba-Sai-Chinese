@@ -12,9 +12,9 @@ export const menu: Record<string, MenuItem[]> = {
     { name: "Hot & Sour Soup", half: 70, image: "https://images.unsplash.com/photo-1672667509942-4cbe8979ccc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8YS1ib3dsLW9mLXNvdXAtd2l0aC1ub29kbGVzLWNhcnJvdHMtYW5kLWNlbGVyeS1LWUkyMUZYOUVXTXxlbnwwfHx8fDE3NTIyMTY0MDl8MA&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Tomato Soup", half: 70, image: "https://images.unsplash.com/photo-1629978444632-9f63ba0eff47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b21hdG8lMjBzb3VwfGVufDB8fHx8MTc1MjIxNjYyMXww&ixlib=rb-4.1.0&q=80&w=1080" },
     { name: "Paneer Soup", full: 100, image: "https://images.unsplash.com/photo-1721223016672-b42b560b5402?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8bWFuY2h1cmlhbi1zb3VwfGVufDB8fHx8MTc1MjIxODkwN3ww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Manchurian Soup", half: 70, image: "https://images.unsplash.com/photo-1628585352638-6a371453b344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5jaHVyaWFuJTIwc291cHxlbnwwfHx8fDE3NTIyMjQwMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080" },
+    { name: "Manchurian Soup", half: 70, image: "https://images.unsplash.com/photo-1572363644253-3daacc7acd0d?auto=format&fit=crop&w=1080&q=80" },
     { name: "Noodle's Soup", half: 70, image: "https://images.unsplash.com/photo-1600490036275-35f5f1656861?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxub29kbGV8ZW58MHx8fHwxNzUyMjIyMjA2fDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { name: "Babycorn Soup", full: 120, image: "https://images.unsplash.com/photo-1628585352638-6a371453b344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5Y29ybiUyMHNvdXB8ZW58MHx8fHwxNzUyMjI0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080" }
+    { name: "Babycorn Soup", full: 120, image: "https://images.unsplash.com/photo-1665594051407-7385d281ad76?auto=format&fit=crop&w=1080&q=80" }
   ],
   "NOODLES": [
     { name: "Veg. Hongkong Noodles", full: 100, image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxob25na29uZyUyMG5vb2RsZXN8ZW58MHx8fHwxNzUyMjI0MDA0fDA&ixlib=rb-4.1.0&q=80&w=1080" },
