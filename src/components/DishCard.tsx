@@ -8,9 +8,9 @@ interface DishCardProps {
 
 export function DishCard({ item }: DishCardProps) {
   const prices = [
-    item.half && { label: "Half", price: item.half },
-    item.full && { label: "Full", price: item.full },
-  ].filter(Boolean) as { label: string; price: number }[];
+    item.half && `Rs ${item.half}`,
+    item.full && `Rs ${item.full}`,
+  ].filter(Boolean);
 
   return (
     <Card className="flex justify-between items-center bg-card border-border/50 hover:border-primary/70 transition-all duration-300 shadow-lg hover:shadow-primary/20 rounded-xl p-4 overflow-hidden group">
@@ -18,14 +18,11 @@ export function DishCard({ item }: DishCardProps) {
       <div className="flex-1 pr-4">
         <h3 className="text-lg font-headline text-primary tracking-wide">{item.name}</h3>
         {prices.length > 0 && (
-            <div className="text-sm text-muted-foreground mt-2 space-y-1">
-                {prices.map(({ label, price }) => (
-                <div key={label} className="flex items-baseline">
-                    <span className="w-12">{label}:</span>
-                    <span className="font-bold text-base text-foreground">Rs {price}</span>
-                </div>
-                ))}
-            </div>
+          <div className="text-sm text-muted-foreground mt-2">
+            <span className="font-bold text-base text-foreground">
+              {prices.join(' / ')}
+            </span>
+          </div>
         )}
       </div>
 
