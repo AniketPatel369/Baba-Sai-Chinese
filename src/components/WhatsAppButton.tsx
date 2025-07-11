@@ -7,12 +7,12 @@ export function WhatsAppButton() {
       href="https://wa.me/919898701230" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50"
+      className="fixed bottom-6 right-6 z-50 group"
       aria-label="Contact us on WhatsApp"
     >
-      <Button size="icon" className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#128C7E] shadow-lg transition-colors">
-        <WhatsAppIcon className="w-8 h-8 text-white" />
-      </Button>
+      <div className="w-16 h-16 rounded-full bg-transparent flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+        <WhatsAppIcon className="w-full h-full" />
+      </div>
     </a>
   );
 }
