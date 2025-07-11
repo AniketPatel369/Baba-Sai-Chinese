@@ -22,7 +22,7 @@ export function DishCard({ item }: DishCardProps) {
             {prices.map(({ label, price }) => (
               <div key={label} className="text-right">
                 <span className="text-sm text-muted-foreground mr-2">{label}</span>
-                <span className="text-lg font-bold text-primary">₹{price}</span>
+                <span className="text-lg font-bold text-primary">Rs {price}</span>
               </div>
             ))}
           </div>
