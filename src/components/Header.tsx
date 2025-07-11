@@ -5,7 +5,6 @@ import { PureVegIcon } from './icons/PureVegIcon';
 export function Header() {
   return (
     <header className="py-12 md:py-16 text-center flex flex-col items-center">
-      <Image src="/logo.png" alt="Baba Sai Chinese Logo" width={80} height={80} className="mb-4" />
       <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary tracking-wider uppercase">
         BABA SAI CHINESE
       </h1>
